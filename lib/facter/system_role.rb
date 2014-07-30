@@ -5,20 +5,20 @@ if File.exists?('/etc/system_role')
 else
   hostname = Facter.value(:hostname)
 end
-values = /^(?<cluster_name>[-\w]+?)-?(?<node_number>\d*)$/.match(hostname)
+values = /^([-\w]+?)-?(\d*)$/.match(hostname)
 
 Facter.add("cluster_name") do
   setcode do
-    unless values[:cluster_name].nil?
-      values[:cluster_name]
+    unless values[1].nil?
+      values[1]
     end
   end
 end
 
 Facter.add("node_number") do
   setcode do
-    unless values[:node_number].nil?
-      values[:node_number]
+    unless values[2].nil?
+      values[2]
     end
   end
 end

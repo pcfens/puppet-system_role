@@ -1,5 +1,7 @@
 # puppet-system_role
 
+[![Build Status](https://travis-ci.org/pcfens/puppet-system_role.png?branch=master)](https://travis-ci.org/pcfens/puppet-system_role)
+
 #### Table of Contents
 
 1. [Overview](#overview)

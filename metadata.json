@@ -1,0 +1,46 @@
+{
+  "name": "pcfens/system_role",
+  "version": "0.1.0",
+  "author": "Phil Fenstermacher <pcfens@wm.edu>",
+  "summary": "A module (and facts) for identifying information about a system.",
+  "license": "Apache 2.0",
+  "source": "https://github.com/pcfens/puppet-system_role",
+  "project_page": "https://github.com/pcfens/puppet-system_role",
+  "issues_url": "https://github.com/pcfens/puppet-system_role/issues",
+  "dependencies": [
+    {
+      "name": "puppetlabs-stdlib",
+      "version_range": ">= 3.0.0"
+    }
+  ],
+  "requirements": [
+    {
+      "name": "puppet",
+      "version_requirement": "3.x"
+    },
+    {
+      "name": "pe",
+      "version_requirement": ">=3.2.0"
+    }
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "Debian"
+    },
+    {
+      "operatingsystem": "Ubuntu"
+    },
+    {
+      "operatingsystem": "RedHat"
+    },
+    {
+      "operatingsystem": "CentOS"
+    },
+    {
+      "operatingsystem": "Scientific"
+    },
+    {
+      "operatingsystem": "OracleLinux"
+    }
+  ]
+}

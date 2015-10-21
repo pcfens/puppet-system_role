@@ -20,11 +20,9 @@ describe 'system_role' do
       :tier        => 'prod-2',
       :node_number => 10,
     } end
-    it do
-      expect {
-        should compile
-      }.to raise_error(Puppet::Error)
-    end
+
+    it { expect { should raise_error(Puppet::Error)}}
+
   end
   context 'with an invalid node_number' do
     let :params do {
@@ -32,10 +30,8 @@ describe 'system_role' do
       :tier        => 'prod',
       :node_number => 'two',
     } end
-    it do
-      expect {
-        should compile
-      }.to raise_error(Puppet::Error)
-    end
+
+    it { expect { should raise_error(Puppet::Error)}}
+
   end
 end
